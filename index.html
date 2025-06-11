@@ -1,0 +1,165 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bly Art and Arch</title>
+  <style>
+    :root {
+      --earth-tone-bg: #f4f1ed;
+      --earth-tone-accent: #d8cfc4;
+      --army-green: #4b5d3d;
+      --text-color: #2e2b27;
+      --soft-pink: #f9ecec;
+      --rose-gold: #cfa9a9;
+    }body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--soft-pink);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--army-green);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--rose-gold);
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  background-color: var(--army-green);
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #3a4a31;
+}
+
+main {
+  padding: 2rem 1rem;
+  max-width: 960px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+h2 {
+  color: var(--army-green);
+  border-bottom: 2px solid var(--rose-gold);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: var(--army-green);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bly Art and Arch</h1>
+    <p>Menjelajah Seni & Arsitektur Tradisional Papua</p>
+  </header>  <nav>
+    <a href="#lukisan">Lukisan</a>
+    <a href="#sketsa">Sketsa</a>
+    <a href="#arsitektur">Arsitektur</a>
+    <a href="#kontak">Kontak</a>
+  </nav>  <main>
+    <section id="lukisan">
+      <h2>Karya Lukisan</h2>
+      <p>Lukisan-lukisan ini menggambarkan alam, budaya, dan pengalaman perempuan Papua. Setiap karya memiliki cerita dan emosi yang terekspresikan melalui warna dan tekstur.</p>
+      <div class="gallery">
+        <img src="lukisan1.jpg" alt="Lukisan 1">
+        <img src="lukisan2.jpg" alt="Lukisan 2">
+      </div>
+    </section><section id="sketsa">
+  <h2>Sketsa Arsitektur</h2>
+  <p>Sketsa-sketsa ini merupakan interpretasi visual dari bentuk-bentuk rumah tradisional Papua, dengan penekanan pada struktur dan makna budaya di baliknya.</p>
+  <div class="gallery">
+    <img src="sketsa1.jpg" alt="Sketsa 1">
+    <img src="sketsa2.jpg" alt="Sketsa 2">
+  </div>
+</section>
+
+<section id="arsitektur">
+  <h2>Penjelasan Arsitektur Papua</h2>
+  <p>Arsitektur tradisional Papua didesain untuk menyesuaikan dengan kondisi geografis dan sosial masyarakatnya. Bangunan seperti <strong>Honai</strong> mencerminkan kehangatan komunitas dan kearifan lokal dalam memanfaatkan alam sebagai bahan bangunan.</p>
+  <p>Berikut adalah ilustrasi bangunan tradisional yang menjadi bagian penting dari identitas arsitektur Papua:</p>
+  <div class="gallery">
+    <img src="honai.jpg" alt="Honai">
+    <img src="rumah_papua.jpg" alt="Rumah Adat Papua">
+  </div>
+</section>
+
+<section id="kontak">
+  <h2>Kontak</h2>
+  <p>Untuk pertanyaan, apresiasi karya, atau kolaborasi silakan hubungi saya melalui:</p>
+  <div class="contact-info">
+    <p>WhatsApp: <a href="https://wa.me/6282134791188" target="_blank">+62 821 3479 1188</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/bellandina_monalissa_yeimo" target="_blank">@bellandina_monalissa_yeimo</a></p>
+  </div>
+</section>
+
+  </main>  <footer>
+    <p>&copy; 2025 Bly Art and Arch — Semua karya dilindungi hak cipta</p>
+  </footer>
+</body>
+</html>
